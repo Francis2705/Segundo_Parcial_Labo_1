@@ -89,7 +89,7 @@ class Player():
 
             for i in range(len(lista_plataformas)): #verificar si colisiono con plataformas y rectangulo final
                 otro_rectangulo_futuro_x = pygame.Rect(self.rect.x + dx, self.rect.y, self.width, self.height)
-                if otro_rectangulo_futuro_x.colliderect(lista_plataformas[i].rect) or otro_rectangulo_futuro_x.colliderect(rectangulo_final): #collision in x
+                if otro_rectangulo_futuro_x.colliderect(lista_plataformas[i].rect) or otro_rectangulo_futuro_x.colliderect(rectangulo_final):
                     dx = 0
                 otro_rectangulo_futuro_y = pygame.Rect(self.rect.x, self.rect.y + dy, self.width, self.height)
                 if otro_rectangulo_futuro_y.colliderect(lista_plataformas[i].rect): #collision in y
@@ -185,9 +185,9 @@ class Player():
         self.vel_y = 0
         self.jumped = False
         self.in_air = True
-        self.sound_enemies_collision = pygame.mixer.Sound('musica\colision_enemigos.mp3')
-        self.sound_coins_collision = pygame.mixer.Sound('musica\moneda_colision.mp3')
-        sound_enemies_destroy = pygame.mixer.Sound('musica\destroy_enemies.mp3')
+        self.sound_enemies_collision = pygame.mixer.Sound('musica\\colision_enemigos.mp3')
+        self.sound_coins_collision = pygame.mixer.Sound('musica\\moneda_colision.mp3')
+        sound_enemies_destroy = pygame.mixer.Sound('musica\\destroy_enemies.mp3')
         sound_enemies_destroy.set_volume(0.1)
         self.sound_enemies_destroy = sound_enemies_destroy
         self.game_over = 0

@@ -2,7 +2,7 @@ import pygame
 
 class Coin():
     def __init__(self, x, y, ancho, largo, movimiento):
-        self.image = pygame.image.load('objetos\coin.png')
+        self.image = pygame.image.load('objetos\\coin.png')
         self.image = pygame.transform.scale(self.image, (ancho,largo))
         self.rect = self.image.get_rect()
         self.rect.x = x

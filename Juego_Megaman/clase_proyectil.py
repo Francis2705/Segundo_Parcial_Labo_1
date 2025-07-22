@@ -3,7 +3,7 @@ import pygame
 class Bullets(pygame.sprite.Sprite):
     def __init__(self, x, y, direccion):
         pygame.sprite.Sprite.__init__(self) #inicializo la clase base de sprites y esto me permite tener las demas funcionalidades
-        self.image = pygame.image.load('objetos\disparo.png')
+        self.image = pygame.image.load('objetos\\disparo.png')
         self.image = pygame.transform.scale(self.image, (15,15))
         self.rect = self.image.get_rect()
         self.rect.center = [x, y]

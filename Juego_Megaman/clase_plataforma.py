@@ -2,7 +2,7 @@ import pygame
 
 class Platform():
     def __init__(self, x, y, ancho, largo):
-        self.image = pygame.image.load('objetos\plataforma.png')
+        self.image = pygame.image.load('objetos\\plataforma.png')
         self.image = pygame.transform.scale(self.image, (ancho,largo))
         self.rect = self.image.get_rect()
         self.rect.x = x
