@@ -14,10 +14,10 @@ screen = pygame.display.set_mode(ancho_alto)
 pygame.display.set_caption('Save the Earth')
 background = pygame.image.load('imagenes\\fondo_menu.png')
 background = pygame.transform.scale(background, ancho_alto)
-pre_background = pygame.image.load('imagenes\pre_main_menu.png')
+pre_background = pygame.image.load('imagenes\\pre_main_menu.png')
 pre_background = pygame.transform.scale(pre_background, ancho_alto)
 try:
-    icono = pygame.image.load('imagenes\icono.png')
+    icono = pygame.image.load('imagenes\\icono.png')
     pygame.display.set_icon(icono)
 except FileNotFoundError as e:
     with open('errores.txt','a') as error:
@@ -73,7 +73,7 @@ while True:
             screen.blit(background, (0,0))
 
         if flag_musica == False:
-            pygame.mixer.music.load('musica\musica_fondo.mp3')
+            pygame.mixer.music.load('musica\\musica_fondo.mp3')
             pygame.mixer.music.play(-1)
             pygame.mixer.music.set_volume(0.1)
             flag_musica = True

@@ -4,7 +4,7 @@ from clase_boton import Button
 pygame.font.init()
 ancho_alto = (1200, 800)
 #buttons
-exit_image = pygame.image.load('botones\exit.png')
+exit_image = pygame.image.load('botones/exit.png')
 exit_image = pygame.transform.scale(exit_image, (200, 100))
 try:
     exit_button = Button(ancho_alto[0] - 210, ancho_alto[1] - 110, exit_image)
