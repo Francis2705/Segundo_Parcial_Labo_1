@@ -12,19 +12,19 @@ class NivelTres():
         self.ancho_alto = ancho_alto
         self.background = pygame.image.load('imagenes\\fondo3.png')
         self.background = pygame.transform.scale(self.background, self.ancho_alto)
-        self.win_background = pygame.image.load('imagenes\pantalla_win.png')
+        self.win_background = pygame.image.load('imagenes\\pantalla_win.png')
         self.win_background = pygame.transform.scale(self.win_background, self.ancho_alto)
-        self.lose_background = pygame.image.load('imagenes\pantalla_lose.png')
+        self.lose_background = pygame.image.load('imagenes\\pantalla_lose.png')
         self.lose_background = pygame.transform.scale(self.lose_background, self.ancho_alto)
 
         #sonido fondo
         pygame.mixer.music.load('musica\\nivel_3.mp3')
         pygame.mixer.music.play(-1)
         pygame.mixer.music.set_volume(0.1)
-        imagen_boton_sonido_play = pygame.image.load('botones\sonido_play.png')
+        imagen_boton_sonido_play = pygame.image.load('botones\\sonido_play.png')
         imagen_boton_sonido_play = pygame.transform.scale(imagen_boton_sonido_play, (50,50))
         self.boton_play_music = Button(610, 280, imagen_boton_sonido_play)
-        imagen_boton_sonido_pause = pygame.image.load('botones\sonido_pause.png')
+        imagen_boton_sonido_pause = pygame.image.load('botones\\sonido_pause.png')
         imagen_boton_sonido_pause = pygame.transform.scale(imagen_boton_sonido_pause, (50,50))
         self.boton_pause_music = Button(530, 280, imagen_boton_sonido_pause)
         #desactivar sonidos colision
@@ -34,7 +34,7 @@ class NivelTres():
         self.flag_sonidos_colision = True
 
         self.fuente = pygame.font.SysFont('helvetica', 50)
-        self.moneda_imagen = pygame.image.load('objetos\coin.png')
+        self.moneda_imagen = pygame.image.load('objetos\\coin.png')
         self.moneda_imagen = pygame.transform.scale(self.moneda_imagen, (40, 40))
 
         self.reset_level()
